@@ -7,7 +7,7 @@
     <?php wp_head(); ?>
 </head>
 <body>
-<?php get_header(); ?>
+<?php get_header(); ?> <!--Añadido el cabezal-->
 <h1><?php bloginfo( 'name' ); ?></h1>
 <h2><?php bloginfo( 'description' ); ?></h2>
 
@@ -37,7 +37,7 @@
     <p>No posts found. :(</p>
 
 <?php endif; ?>
-<?php get_footer(); ?>
+<?php get_footer(); ?> <!--Añadido el pie de pagina-->
 <?php wp_footer(); ?>
 </body>
 </html>
