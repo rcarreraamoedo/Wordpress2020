@@ -12,7 +12,7 @@
         <div class="description">
             <?php bloginfo('description'); ?>
             <br>
-            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/totoro.jpg" >
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/totoro.jpg"width="250" height="250" >
         </div>
     </div>
 </div>

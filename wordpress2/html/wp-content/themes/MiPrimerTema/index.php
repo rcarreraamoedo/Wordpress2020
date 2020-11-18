@@ -18,7 +18,9 @@ if ( have_posts() ) :
     while ( have_posts() ) :
         the_post();
         the_title('<h3> Titulo:', '</h3>');
+        the_post_thumbnail('fondo-1');
         ?>
+
         <h1> <?php the_excerpt(); ?> </h1>
 <?php
         the_content();
