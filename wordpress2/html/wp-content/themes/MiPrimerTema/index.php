@@ -8,19 +8,16 @@
 </head>
 <body>
 <?php get_header(); ?> <!--Añadido el cabezal-->
-<h1><?php bloginfo( 'name' ); ?></h1>
-<h2><?php bloginfo( 'description' ); ?></h2>
 
 <?php
 
 
 if ( have_posts() ) :
     while ( have_posts() ) :
-        the_post();
-        the_title('<h3> Titulo:', '</h3>');
-        the_post_thumbnail('fondo-1');
-        ?>
-
+        the_post();?>
+        Titulo: <a href=" <?php the_permalink(); ?> "> <?php the_title() ?></a>
+        <?php the_title('<h3> Titulo:', '</h3>');?>
+        <?php the_post_thumbnail('fondo-1');?>
         <h1> <?php the_excerpt(); ?> </h1>
 <?php
         the_content();
